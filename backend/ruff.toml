@@ -1,0 +1,7 @@
+line-length = 135
+target-version = "py310"
+
+[lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+# B008: FastAPI Depends() idiom; E741: short loop names; B905: zip strictness not needed
+ignore = ["B008", "E741", "B905"]

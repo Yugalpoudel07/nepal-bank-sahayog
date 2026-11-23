@@ -1,0 +1,5 @@
+# HTTPS reverse proxy (Caddy gets and renews the certificate automatically).
+# Replace the domain with yours, then:  sudo cp deploy/Caddyfile /etc/caddy/Caddyfile && sudo systemctl restart caddy
+nbs-api.duckdns.org {
+	reverse_proxy 127.0.0.1:8000
+}

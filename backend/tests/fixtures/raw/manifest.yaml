@@ -1,0 +1,26 @@
+# SAMPLE test corpus (tests/fixtures). Not real NRB documents.
+documents:
+- path: acts/sample-bank-and-financial-institutions-act-2073.txt
+  doc_type: act
+  title: बैंक तथा वित्तीय संस्था सम्बन्धी ऐन, २०७३ (SAMPLE)
+  language: ne
+- path: directives/sample-ud-abc-2081.txt
+  doc_type: directive
+  title: "परिपत्र नं. ७ (क,ख,ग) २०८१/८२ : एकीकृत निर्देशन, २०८१ जारी गरिएको सम्बन्धमा (SAMPLE)"
+  language: ne
+  fiscal_year: 2081/82
+- path: directives/sample-ud-abc-2082.txt
+  doc_type: directive
+  title: "परिपत्र नं. १० (क, ख, ग) २०८२/८३: एकीकृत निर्देशन, २०८२ जारी गरिएको सम्बन्धमा (SAMPLE)"
+  language: ne
+  fiscal_year: 2082/83
+- path: circulars/2083-84/sample-circular-1-abc.txt
+  doc_type: circular
+  title: "परिपत्र नं. १ (क, ख, ग) २०८३/८४: “क”, “ख” र “ग” वर्गका संस्थालाई जारी एकीकृत निर्देशन, २०८२ मा संशोधन (SAMPLE)"
+  language: ne
+  fiscal_year: 2083/84
+- path: circulars/2082-83/sample-notice-cash-limit.txt
+  doc_type: notice
+  title: "सूचना नं १५/२०८२-८३: नगद कारोबारको सीमा सम्बन्धमा (SAMPLE)"
+  language: ne
+  fiscal_year: 2082/83

@@ -1,0 +1,17 @@
+# systemd service for the Nepal Bank Sahayak API on the Oracle server.
+# Install:  sudo cp deploy/nbs.service /etc/systemd/system/ && sudo systemctl enable --now nbs
+[Unit]
+Description=Nepal Bank Sahayak API
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/nepal-bank-sahayak/backend
+# One process only: conversation memory, the rate limiter and the embedding model live in-process.
+# --proxy-headers: behind Caddy, rate-limit each visitor by their own IP.
+ExecStart=/home/ubuntu/nepal-bank-sahayak/backend/venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8000 --proxy-headers --forwarded-allow-ips 127.0.0.1
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

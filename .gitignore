@@ -1,0 +1,27 @@
+# secrets
+.env
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+
+# generated data
+backend/data/processed/
+backend/data/index/
+backend/data/raw/manifest.draft.yaml
+
+# node
+frontend/node_modules/
+frontend/dist/
+myenv/
+
+# NRB PDFs (download them from the source_url in data/catalog/nrb_core_catalog.json)
+backend/data/raw/**/*.pdf

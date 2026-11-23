@@ -1,0 +1,27 @@
+# --- Web server ---
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+pydantic-settings>=2.4
+python-dotenv>=1.0
+
+# --- Calendar ---
+nepali-datetime>=1.0.8
+
+# --- Ingestion ---
+pyyaml>=6.0
+pypdf>=5.0
+pdfplumber>=0.11
+pypdfium2>=4.30          # renders scanned pages for OCR (no poppler needed)
+pytesseract>=0.3.10      # needs the Tesseract program installed separately (see README)
+anthropic>=0.40          # optional paid enrichment only
+google-genai>=1.0        # optional free-tier Gemini enrichment
+
+# --- Retrieval ---
+chromadb==1.5.9          # pinned: must match the version the index in data/index was built with
+rank_bm25>=0.2.2
+sentence-transformers>=3.0
+
+# --- Runtime LLM (as in the reference project) ---
+langchain-core>=0.3
+langchain-google-genai>=2.0
